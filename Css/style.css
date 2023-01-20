@@ -133,14 +133,13 @@ nav ul li a:hover {
 
 /* Hero */
 .hero {
-  height: 250px;
+  height: 200px;
   margin: 55px 35px;
 }
+/* Herotext */
 .hero__text {
   padding: 35px 0;
 }
-
-/* Herotext */
 .hero__text h1 {
   position: relative;
   color: var(--light-blue);
@@ -164,7 +163,7 @@ nav ul li a:hover {
   max-width: 63rem;
   white-space: nowrap;
   color: var(--soft-blue);
-  animation: loading 10s linear;
+  animation: loading 12s linear;
 }
 @keyframes loading {
   0% {
@@ -399,24 +398,27 @@ footer {
 /* /Footer */
 
 /* Responsive */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .aboutme__content {
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   }
   .hero__text h1,
   .hero__text p {
-    font-size: 24px;
+    font-size: 2rem;
   }
-}
+} */
 
-@media screen and (max-width: 480px) {
-  /* .aboutme__content {
+@media screen and (min-width:320px) and (max-width: 480px) {
+  .aboutme__content {
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  }
+  .hero {
+    margin: 55px 0;
   }
   .hero__text h1,
   .hero__text p {
-    font-size: 24px;
-  } */
+    font-size: 2rem;
+  }
   .nav-container {
     position: fixed;
     top: 0;
